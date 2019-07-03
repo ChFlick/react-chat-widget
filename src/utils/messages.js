@@ -49,13 +49,13 @@ function sinEaseOut(t, b, c, d) {
 }
 
 /**
- * 
+ *
  * @param {*} target scroll target
  * @param {*} scrollStart
  * @param {*} scroll scroll distance
  */
 function scrollWithSlowMotion(target, scrollStart, scroll) {
-  const raf = window.webkitRequestAnimationFrame || window.requestAnimationFrame
+  const raf = window.requestAnimationFrame
   let start = null
   const step = (timestamp) => {
     if (!start) {
