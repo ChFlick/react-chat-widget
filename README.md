@@ -1,14 +1,14 @@
 # react-chat-widget
-[![circle-ci](https://img.shields.io/circleci/project/github/Wolox/react-chat-widget.svg)](https://circleci.com/gh/Wolox/react-chat-widget)
-[![npm](https://img.shields.io/npm/v/react-chat-widget.svg)](https://www.npmjs.com/package/react-chat-widget)
+[![npm](https://img.shields.io/npm/v/react-chat-widget-injectable.svg)](https://www.npmjs.com/package/react-chat-widget-injectable)
 
-[![FEArmy](./assets/FEA_open_source_sm.png)](https://github.com/orgs/Wolox/teams/front-end-army/members)
+This is a fork of the [react-chat-widget](https://www.npmjs.com/package/react-chat-widget)
+
 ## Features
-
 - Plain text message UI
 - Snippet style for links (only as responses for now)
 - Fully customizable
 - Easy to use
+- **Embeddable as iframe (see assets/injectExample.html)**
 
 ![demonstration](./assets/chat-demonstration.gif)
 
@@ -252,9 +252,3 @@ For example, if you want to use a simple button to toggle the widget:
     <button onClick={handleToggle}>Toggle</button>
   )}
 ```
-
-## About
-
-This project is maintained by [Martín Callegari](https://github.com/mcallegari10) and it was written by [Wolox](http://www.wolox.com.ar).
-
-![Wolox](https://raw.githubusercontent.com/Wolox/press-kit/master/logos/logo_banner.png)
