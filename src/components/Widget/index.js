@@ -14,6 +14,7 @@ class Widget extends Component {
   }
 
   toggleConversation = () => {
+    window.parent.postMessage({ chatAction: 'toggle' }, '*');
     this.props.dispatch(toggleChat());
   }
 
