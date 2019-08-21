@@ -2,11 +2,13 @@
 
 const webpack = require('webpack');
 const path = require('path');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const CopyPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
   entry: './index.js',
@@ -70,6 +72,9 @@ module.exports = {
       filename: 'styles.css',
       chunkFileName: '[id].css'
     }),
+    new CopyPlugin([{
+      from: './index.d.ts', to: './index.d.ts'
+    }])
   ],
   optimization: {
     minimizer: [
