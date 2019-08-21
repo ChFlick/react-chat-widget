@@ -19,8 +19,8 @@ window.addEventListener('message', function (payload) {
         document.querySelector('#chat-widget').setAttribute('class', 'rcw-widget-container rcw-open');
     } else {
         isOpen = false;
-        document.querySelector('#chat-widget-frame').setAttribute('class', 'rcw-launcher');
-        document.querySelector('#chat-widget').setAttribute('class', 'rcw-widget-container');
+        document.querySelector('#chat-widget-frame').setAttribute('class', 'rcw-widget-container');
+        document.querySelector('#chat-widget').setAttribute('class', 'rcw-launcher');
     }
 
 });
@@ -53,7 +53,7 @@ function init(host) {
     }`;
     document.head.appendChild(styles);
 
-    const iframeHTML = '<iframe width="1000" height="1000" id="chat-widget" frameborder="0" src="' + host + '/" class="rcw-launcher"/>';
+    const iframeHTML = '<iframe width="100%" height="80%" id="chat-widget" frameborder="0" src="' + host + '/" class="rcw-launcher"/>';
     injectDOMElement('div', 'body', { id: 'chat-widget-frame', innerHTML: iframeHTML, className: 'rcw-widget-container' });
 }
 
