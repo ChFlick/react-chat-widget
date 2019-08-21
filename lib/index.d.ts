@@ -4,8 +4,8 @@ export interface WidgetProps {
   title?: string,
   titleAvatar?: string,
   subtitle?: string,
-  handleNewUserMessage: (userInput: string) => {},
-  handleQuickButtonClicked?: (quickButtonValue: string) => {},
+  handleNewUserMessage: (userInput: string) => void,
+  handleQuickButtonClicked?: (quickButtonValue: string) => void,
   senderPlaceHolder?: string,
   profileAvatar?: string,
   showCloseButton?: boolean,
@@ -15,7 +15,7 @@ export interface WidgetProps {
   // launcher?: PropTypes.func
 };
 
-export declare const Widget: React.Component<WidgetProps>
+export declare const Widget: React.ComponentType<WidgetProps>
 
 export declare function addUserMessage(text: string): void;
 export declare function addResponseMessage(text: string): void;
