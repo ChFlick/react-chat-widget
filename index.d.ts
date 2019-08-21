@@ -13,7 +13,7 @@ export interface WidgetProps {
   badge?: number,
   autofocus?: boolean,
   // launcher?: PropTypes.func
-};
+}
 
 export declare const Widget: React.ComponentType<WidgetProps>
 
@@ -28,7 +28,7 @@ export declare type Link = {
 
 export declare function addLinkSnippet(link: Link) : void;
 export declare function toggleMsgLoader(): void;
-export declare function renderCustomComponent(component: React.Component, props: Map, showAvatar = false): void;
+export declare function renderCustomComponent(component: React.Component, props: Map<any, any>, showAvatar?: boolean): void;
 export declare function toggleWidget(): void;
 export declare function toggleInputDisabled(): void;
 export declare function dropMessages(): void;
